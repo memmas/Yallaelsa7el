@@ -1,0 +1,53 @@
+<h1> </h1>
+
+
+
+
+<%= simple_form_for :search,  url: hotel_infos_path , :method => :get do |f| %>
+    <%= f.input :Destination, :autofocus => true,input_html: {value: ""} %>
+    <%= f.input :Owner_Name, :autofocus => true,input_html: {value: ""} %>
+    <%= f.input :Mobile_Number, :autofocus => true,input_html: {value: ""} %>
+    <%= f.input :URL, :autofocus => true,input_html: {value: ""} %>
+    <%= f.input :Number_of_rooms, :autofocus => true,input_html: {value: ""} %>
+    <%= f.input :Number_of_beds, :autofocus => true,input_html: {value: ""} %>
+    <%= f.input :Accomodates, :autofocus => true,input_html: {value: ""} %>
+    <%= f.submit "Search" %>
+<% end %>
+
+
+
+
+
+
+
+<h1><%= @hello %></h1>
+
+<table style="width:100%">
+  <tr>
+    <th>Destination</th>
+    <th>Owner</th>
+    <th>Mobile Number</th>
+    <th>URL</th>
+    <th>Number of rooms</th>
+    <th>Number of Beds</th>
+    <th>Accomodates</th>
+  </tr>
+
+  <% @HoltesInfos.each do |info| %>
+    
+  
+    <tr>
+    <td><%=info.Destination %></td>
+    <td><%= info.Owner_Name%></td>
+    <td> <%= info.Mobile_Number%></td>
+    <td>  <%= info.URL%> </td>
+    <td>  <%= info.Number_of_rooms%>  </td>
+    <td>  <%= info.Number_of_Beds%>   </td>
+    <td>  <%=  info.Accomodates  %>   </td>
+     </tr>
+  
+  
+    <% end %>
+  
+  
+</table>

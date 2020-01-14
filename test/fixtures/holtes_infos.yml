@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  Destination: MyString
+  Owner_Name: MyString
+  Mobile_Number: MyString
+  URL: MyString
+  Number_of_rooms: MyString
+  Number_of_Beds: MyString
+  Accomodates: MyString
+
+two:
+  Destination: MyString
+  Owner_Name: MyString
+  Mobile_Number: MyString
+  URL: MyString
+  Number_of_rooms: MyString
+  Number_of_Beds: MyString
+  Accomodates: MyString
